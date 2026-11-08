@@ -2,9 +2,8 @@
 
 ### Fork With:
 
-- `.3dsx` & `.cia` 
+- `.cia` & `.3dsx`
 - Functional in-game text entry
-- Startup & Shutdown Fixes
 
 Download from [Latest Releases](https://github.com/LBpartition/fallout2-ce-3ds/releases/latest)
 
