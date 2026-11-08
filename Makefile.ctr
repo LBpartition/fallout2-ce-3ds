@@ -41,7 +41,7 @@ ROMFS       := romfs
 GFXBUILD    := $(ROMFS)/gfx
 
 APP_TITLE           := Fallout 2
-APP_DESCRIPTION     := Fallout2-ce port for 3DS
+APP_DESCRIPTION     := Fallout 2
 APP_AUTHOR          := MrHuu
 
 APP_PRODUCT_CODE    := CTR-P-FALLOUT2
