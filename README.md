@@ -4,7 +4,7 @@
 
 - `.3dsx` & `.cia` 
 - Functional in-game text entry
-- sfallConfigInit() / argv[0] startup fixes
+- Startup & Shutdown Fixes
 
 Download from [Latest Releases](https://github.com/LBpartition/fallout2-ce-3ds/releases/latest)
 
