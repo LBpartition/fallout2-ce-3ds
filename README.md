@@ -117,3 +117,13 @@ There are literally hundreds if not thousands of fixes and features in sfall. I 
 ## License
 
 The source code is this repository is available under the [Sustainable Use License](LICENSE.md).
+
+## 3DS build notes
+
+This fork includes the following Fallout2 3DS fixes:
+
+- The `sfallConfigInit()` startup path guards null or empty `argc`/`argv` before accessing `argv[0]`.
+- `SDL_TEXTINPUT` events are forwarded into the existing Fallout input queue so 3DS keyboard text appears in-game.
+- `os/ctr/audio_silent.wav` contains the custom banner audio used by the CIA build.
+
+When building the 3DS CIA, keep the custom audio file in the banner-tool `-a` input and do not replace it with a silent WAV.
