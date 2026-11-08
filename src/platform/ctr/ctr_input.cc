@@ -164,6 +164,12 @@ void ctr_input_process(void)
             touch_handle_end(&(e.tfinger));
             break;
 
+        case SDL_TEXTINPUT:
+            for (const char* text = e.text.text; *text != '\0'; text++) {
+                enqueueInputEvent(static_cast<unsigned char>(*text));
+            }
+            break;
+
         case SDL_QUIT:
             exit(EXIT_SUCCESS);
             break;

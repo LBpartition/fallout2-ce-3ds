@@ -68,19 +68,25 @@ bool sfallConfigInit(int argc, char** argv)
     configSetInt(&gSfallConfig, SFALL_CONFIG_MISC_KEY, SFALL_CONFIG_PIPBOY_AVAILABLE_AT_GAMESTART, 0);
 
     char path[COMPAT_MAX_PATH];
-    char* executable = argv[0];
-    char* ch = strrchr(executable, '\\');
-    if (ch != nullptr) {
-        *ch = '\0';
-        snprintf(path, sizeof(path), "%s\\%s", executable, SFALL_CONFIG_FILE_NAME);
-        *ch = '\\';
+    if (argv != nullptr && argc > 0 && argv[0] != nullptr) {
+        char* executable = argv[0];
+        char* ch = strrchr(executable, '\\');
+        if (ch != nullptr) {
+            *ch = '\0';
+            snprintf(path, sizeof(path), "%s\\%s", executable, SFALL_CONFIG_FILE_NAME);
+            *ch = '\\';
+        } else {
+            strcpy(path, SFALL_CONFIG_FILE_NAME);
+        }
     } else {
         strcpy(path, SFALL_CONFIG_FILE_NAME);
     }
 
     configRead(&gSfallConfig, path, false);
 
-    configParseCommandLineArguments(&gSfallConfig, argc, argv);
+    if (argv != nullptr) {
+        configParseCommandLineArguments(&gSfallConfig, argc, argv);
+    }
 
     gSfallConfigInitialized = true;
 
