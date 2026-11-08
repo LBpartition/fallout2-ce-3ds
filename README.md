@@ -1,4 +1,4 @@
-# Fallout 2 Community Edition
+# Fallout 2 Community Edition 3DS Port
 
 ### Fork With:
 
