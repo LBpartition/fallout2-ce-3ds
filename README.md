@@ -2,10 +2,15 @@
 
 ### Fork With:
 
+- `.3dsx` & `.cia` 
 - Functional in-game text entry
 - sfallConfigInit() / argv[0] startup fixes
 
+Download from [Latest Releases](https://github.com/LBpartition/fallout2-ce-3ds/releases/latest)
 
+
+
+---
 Fallout 2 Community Edition is a fully working re-implementation of Fallout 2, with the same original gameplay, engine bugfixes, and some quality of life improvements, that works (mostly) hassle-free on multiple platforms.
 
 Popular Fallout 2 total conversion mods are partially supported. Original versions of Nevada and Sonora (that do not rely on extended features provided by Sfall) likely work, although there is no complete walkthrough confirmation yet. [Fallout 2 Restoration Project](https://github.com/BGforgeNet/Fallout2_Restoration_Project), [Fallout Et Tu](https://github.com/rotators/Fo1in2) and [Olympus 2207](https://olympus2207.com) are not yet supported. Other mods (particularly Resurrection and Yesterday) are not tested.
